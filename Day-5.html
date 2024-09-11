@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-image: url(https://t3.ftcdn.net/jpg/05/71/65/42/360_F_571654288_W1tktzV1RjxUBdz4uWavaElmur7gi6Wd.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            
+        }
+
+        button{
+            font-size: 15px;
+            text-align: center;
+            margin: 5px;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            text-decoration: underline;
+            background-color: black;
+            color: white;
+        }
+
+        p{
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+        
+        }
+    </style>
+    <script>
+    
+
+    function AnimalFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=animal')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function CareerFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=career')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function CelebrityFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=celebrity')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function DevFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=dev')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function ExplicitFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=explicit')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function FashionFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=fashion')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function FoodFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=food')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function HistoryFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=history')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function MoneyFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=money')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function MovieFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=movie')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function MusicFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=music')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function PoliticalFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=political')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function ReligionFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=religion')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function ScienceFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=science')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function SportFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=sport')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+
+    function TravelFunction(){
+        fetch('https://api.chucknorris.io/jokes/random?category=travel')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+    </script>
+</head>
+<body>
+    <P1 style="font-size: 25px;text-align: center;text-decoration: underline;">Click on buttons to view jockes</P1><br><br>
+    <button onclick="AnimalFunction()">animal</button>
+    <button onclick="CareerFunction()">career</button>
+    <button onclick="CelebrityFunction()">celebrity</button>
+    <button onclick="DevFunction()">dev</button>
+    <button onclick="ExplicitFunction()">explicit</button>
+    <button onclick="FashionFunction()">fashion</button>
+    <button onclick="FoodFunction()">food</button>
+    <button onclick="HistoryFunction()">history</button><br><br>
+    <button onclick="MoneyFunction()">money</button>
+    <button onclick="MovieFunction()">movie</button>
+    <button onclick="MusicFunction()">music</button>
+    <button onclick="PoliticalFunction()">polotical</button>
+    <button onclick="ReligionFunction()">religion</button>
+    <button onclick="ScienceFunction()">science</button>
+    <button onclick="SportFunction()">sport</button>
+    <button onclick="TravelFunction()">travel</button><br><br>
+
+<p id="chucks" style="margin:0 auto;"></p>
+</body>
+</html>
